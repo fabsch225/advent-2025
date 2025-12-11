@@ -5,10 +5,6 @@
 -define(END_NODE, "out").
 -define(INPUT_FILENAME, "input.txt").
 
--type device() :: string().
--type outputs() :: [device()].
--type graph() :: #{device() => outputs()}.
--type memo() :: #{device() => integer()}.
 
 main() ->
     case file:read_file(?INPUT_FILENAME) of
